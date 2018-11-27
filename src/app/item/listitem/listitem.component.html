@@ -1,0 +1,43 @@
+
+<div class="row">
+  
+    <div class="col-md-6">
+        <canvas baseChart
+                [data]="pieChartData"
+                [datasets]="pieChartDatasets"
+                [labels]="pieChartLabels"
+                [chartType]="pieChartType"
+                [options]="piechartOptions"
+                [legend]="true"
+                [colors]= "pieChartColors"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+
+            <div class="box-buttons">
+                <input type="button" class="button button-login expanded update" value="Home">
+                <input type="button" class="button button-login expanded update" value="Iniciar">
+                <input type="button" class="button button-login expanded update" value="Detener">
+            </div>
+      </div>
+
+
+      <div class="col-md-6">
+        <canvas baseChart
+                [data]="pieChartData2"
+                [datasets]="pieChartDatasets2"
+                [labels]="pieChartLabels2"
+                [chartType]="pieChartType2"
+                [options]="piechartOptions2"
+                [legend]="true"
+                [colors]= "pieChartColors2"
+                (chartHover)="chartHovered2($event)"
+                (chartClick)="chartClicked2($event)"></canvas>
+                
+            <div class="box-buttons">
+                <input type="button" class="button button-login expanded update" value="Home">
+                <input type="button" class="button button-login expanded update" value="Cargar">
+            </div>
+      </div>
+      
+ 
+</div>  

@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-md-4">
+<form>
+    <div class="form-container">
+      <div class="row columns login-box">
+        <h2 class="tituloall">ADMIN</h2>
+        <input type="checkbox" name="recibir" value="recibir"> Recibir correo de notificacion
+
+        <div class="form-group notificacion">
+            <div class="input-group">
+                <input class="timenoti" type="time" placeholder="Hora de envio de las notificaciones" value="{{selectedTime}}">
+                <span (click)="open()" class="input-group-addon warning"><span class="glyphicon glyphicon-time"></span></span>
+            </div>
+        </div>
+
+        
+        
+
+        <div class="funkyradio">
+            <div class="funkyradio-success">
+                <input type="checkbox" name="firma" id="firma" checked/>
+                <label for="firma">FIRMA DIGITAL INSTALADA</label>
+            </div>
+        </div>
+         
+        <label>Username
+          <input type="text" >
+          <div class="alert" ></div>
+        </label>
+        <label>Nombre del Certificado 
+          <input type="text">
+          <div class="alert"  ></div>
+        </label> 
+        <label>Pin 
+          <input type="text">
+          <div class="alert" ></div>
+        </label>  
+        <div class="callout warning" > </div>   
+        <input type="button" class="button button-login expanded cancel" value="CANCELAR">
+        <input type="submit" class="button button-login expanded update" value="ACTUALIZAR">
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
